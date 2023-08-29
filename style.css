@@ -1,0 +1,181 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #EFEFEF;
+}
+
+body::before{
+  content: '';
+  width: 100vw;
+  height: 436px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #535971;
+}
+
+.page{
+
+  width: 750px;
+  margin: 140px auto 0;
+}
+.page header{
+  width:319px ;
+  margin: 80px 0 58px;
+}
+.page header h1{
+  color: #FFF;
+  font-family: 'Staatliches', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 18px;
+  
+}
+
+.page header p{
+  width: 417px;
+  height: 46px;color: #FFF;
+  font-family: 'Poppins',sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  
+}
+
+.page form {
+  
+  padding: 64px;
+  margin-top: 40px;
+  border-radius: 8px 0 0;
+  background: #FAFAFC;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.page form fieldset {
+  
+  
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.page form fieldset legend{
+  color: #535971;
+  font-family: 'Staatliches', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  width: 100%;
+  border-bottom: 1px solid #E6E6F0;
+  margin-bottom: 30px;
+}
+.page form span{
+  color: #C1BCCC;
+  font-family: 'Poppins';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-left: 7px;
+}
+/* Ajuste para o Campo dos nomes */
+.wrapper-name{
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+}
+.wrapper-name input{
+  margin-top: 9px;
+  width: 300px;
+  height: 56px;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  cursor: pointer;
+  Background:  #FAFAFC;
+}
+.input-wrapper-first, .input-wrapper-last{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  
+  
+}
+.input-wrapper{
+  
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+}
+.input-wrapper label, .wrapper-name label{
+  
+  color: #4E4958;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 400;
+  
+}
+.input-wrapper input{
+  margin-top: 9px;
+  width: 622px;
+  height: 56px;
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid  #E6E6F0;
+  background:  #FAFAFC;
+  font-size: 18px;
+}
+
+
+#datails-horarios{
+  color: #535971;
+  font-family: 'Staatliches';
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.col-3{
+  display: flex;
+  gap: 20px;
+}
+
+.col-3 #event-date{
+  width: 312px;
+}
+.col-3 #event-begin , .col-3 #event-end{
+  width:128px ;
+}
+.col-3 #event-begin::placeholder{
+  color: #E6E6F0;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 64px;
+  height: 136px;
+  margin-bottom: 100px;
+  border-top: 1px solid #D6D6D6;
+  border-radius: 0px 0px 20px 20px;
+  background: #535971;
+  border-bottom: 0 0 8px 8px ;
+}
+footer .button{
+  height: 56px;
+  border-radius: 20px;
+  background: #FF5374;
+  color: #FFF;
+  font-family: 'Archivo';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  border: 0;
+}
